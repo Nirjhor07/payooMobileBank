@@ -84,12 +84,12 @@
 
       <div class="buttons grid grid-cols-3 gap-4 mt-3">
         <!-- btn-1 -->
-        <button class="btn btn-primary btn-soft flex-col h-full p-5">
+        <button onclick="visibleClass('addMoneyDiv')" class="btn btn-primary btn-soft flex-col h-full p-5">
           <img src="assets/opt-1.png" alt="" />
           <h1>Add Money</h1>
         </button>
         <!-- btn-2 -->
-        <button class="btn btn-primary btn-soft flex-col h-full p-5">
+        <button onclick="visibleClass('cashOut-div')" class="btn btn-primary btn-soft flex-col h-full p-5">
           <img src="assets/opt-2.png" alt="" />
           <h1>Cash Out</h1>
         </button>
@@ -114,6 +114,7 @@
           <h1>Transactions</h1>
         </button>
       </div>
+
     </section>
 
     <section id="cashOut-div" class="w-11/12 mx-auto p-3.5 space-y-2 hidden">
@@ -164,7 +165,7 @@
       </div>
     </section>
 
-    <section id="addMoneyDiv" class="w-11/12 mx-auto p-3.5 space-y-3">
+    <section id="addMoneyDiv" class="w-11/12 mx-auto p-3.5 space-y-3 hidden">
       <p class="text-2xl text-neutral font-bold">Add Money</p>
 
       <div

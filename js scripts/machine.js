@@ -15,5 +15,19 @@ function getCurrentAmount() {
 
 function setBalance(value) {
   const valueCurrent = document.getElementById("current-balance");
-   valueCurrent.innerText = value;
+  valueCurrent.innerText = value;
+}
+
+// we will show only the class when respective button is pressed
+function visibleClass(id) {
+  //get the class
+  const addMoney = document.getElementById("addMoneyDiv");
+  const cashOut = document.getElementById("cashOut-div");
+  // hide all the classes
+  addMoney.classList.add("hidden");
+  cashOut.classList.add("hidden");
+
+  // ekhn jei id wala button a click korse oitare only show korum
+  const showOnly = document.getElementById(id);
+  showOnly.classList.remove("hidden");
 }
