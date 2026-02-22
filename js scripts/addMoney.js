@@ -35,6 +35,23 @@ document.getElementById("addMoney-btn").addEventListener("click", function () {
   if (bankPin === "1234") {
     alert(`Add money is succesfull from ${bankAccount} at ${new Date()}`);
     setBalance(addMoneyNewBalance);
+
+    //get the transtion parent div
+    const parentTransitionDiv = document.getElementById(
+      "Transactions-history-container",
+    );
+    //create a new div
+    const newTransitionDiv = document.createElement("div");
+    newTransitionDiv.className = "w-full bg-base-200 text-xl p-4 mb-5 rounded";
+    // set the transtion history
+    newTransitionDiv.innerHTML = `
+     <div class="w-full bg-base-200 text-xl " id="Transactions-card mb-5">
+           Add money is succesfull from ${bankAccount} at ${new Date()}
+     </div>
+    `;
+
+    //append the newchild or div to the parent
+    parentTransitionDiv.appendChild(newTransitionDiv);
   } else {
     alert("invalid pin");
     return;

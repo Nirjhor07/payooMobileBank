@@ -84,12 +84,18 @@
 
       <div class="buttons grid grid-cols-3 gap-4 mt-3">
         <!-- btn-1 -->
-        <button onclick="visibleClass('addMoneyDiv')" class="btn btn-primary btn-soft flex-col h-full p-5">
+        <button
+          onclick="visibleClass('addMoneyDiv')"
+          class="btn btn-primary btn-soft flex-col h-full p-5"
+        >
           <img src="assets/opt-1.png" alt="" />
           <h1>Add Money</h1>
         </button>
         <!-- btn-2 -->
-        <button onclick="visibleClass('cashOut-div')" class="btn btn-primary btn-soft flex-col h-full p-5">
+        <button
+          onclick="visibleClass('cashOut-div')"
+          class="btn btn-primary btn-soft flex-col h-full p-5"
+        >
           <img src="assets/opt-2.png" alt="" />
           <h1>Cash Out</h1>
         </button>
@@ -109,12 +115,14 @@
           <h1>Pay Bill</h1>
         </button>
         <!-- btn-6 -->
-        <button class="btn btn-primary btn-soft flex-col h-full p-5">
+        <button
+          onclick="visibleClass('Transactions-history')"
+          class="btn btn-primary btn-soft flex-col h-full p-5"
+        >
           <img src="assets/opt-6.png" alt="" />
           <h1>Transactions</h1>
         </button>
       </div>
-
     </section>
 
     <section id="cashOut-div" class="w-11/12 mx-auto p-3.5 space-y-2 hidden">
@@ -174,7 +182,10 @@
         <div class="card-body">
           <fieldset class="fieldset">
             <label class="label text-xl text-neutral">Select a bank</label>
-            <select id="addMoneyBankAccount" class="select rounded-full bg-base-200">
+            <select
+              id="addMoneyBankAccount"
+              class="select rounded-full bg-base-200"
+            >
               <option disabled selected>Select a bank</option>
               <option value="Islami Bank">Islami Bank</option>
               <option value="City Bank">City Bank</option>
@@ -218,6 +229,16 @@
             </button>
           </fieldset>
         </div>
+      </div>
+    </section>
+
+    <section
+      id="Transactions-history"
+      class="w-11/12 mx-auto p-3.5 space-y-3 hidden"
+    >
+      <p class="text-2xl text-neutral font-bold">Transition</p>
+      <div class="" id="Transactions-history-container">
+        <div class="w-full bg-base-200 text-2xl m-2" id="Transactions-card"></div>
       </div>
     </section>
 

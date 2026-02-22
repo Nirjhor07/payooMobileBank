@@ -23,9 +23,11 @@ function visibleClass(id) {
   //get the class
   const addMoney = document.getElementById("addMoneyDiv");
   const cashOut = document.getElementById("cashOut-div");
+  const transactions = document.getElementById('Transactions-history');
   // hide all the classes
   addMoney.classList.add("hidden");
   cashOut.classList.add("hidden");
+  transactions.classList.add('hidden')
 
   // ekhn jei id wala button a click korse oitare only show korum
   const showOnly = document.getElementById(id);
