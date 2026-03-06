@@ -25,7 +25,7 @@ document.getElementById("login-btn").addEventListener("click", function () {
     // window.location.replace('/daisyUi.html')
 
     // if you want to have history use assign
-    window.location.assign("/home.html");
+    window.location.assign("./home.html");
   } else {
     alert("Credential dosent matched");
     return;
